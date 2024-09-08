@@ -5,7 +5,7 @@
 This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
 
 Progress: <br>
-2 Tage von 100 abgeschlossen <br>
+2 Tage von 100 abgeschlossen
 ![Progress](./progress.png)
 
 
