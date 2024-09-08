@@ -40,7 +40,7 @@ def count_completed_days():
     return completed_days
 
 def update_readme(completed_days, total_days):
-    readme_path = "README.md"
+    readme_path = "Readme.md"
     if not os.path.exists(readme_path):
         print(f"Datei {readme_path} nicht gefunden.")
         return
