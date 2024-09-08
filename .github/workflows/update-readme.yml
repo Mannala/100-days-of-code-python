@@ -3,7 +3,7 @@ name: Update README Progress
 on:
   push:
     branches:
-      - main  # Ändere dies zu deinem Standardbranch
+      - main
 
 jobs:
   update-readme:
@@ -17,16 +17,12 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Skript ausführen, um den Fortschritt zu berechnen und README.md zu aktualisieren
-      - name: Update README
-        run: |
-          python update_progress.py
+      - name: Install dependencies
+        run: pip install Pillow
 
-      # Änderungen in das Repository pushen
-      - name: Commit changes
+      - name: Generate Progress Image
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Update progress in README" || echo "No changes to commit"
-          git push || echo "No changes to push"
+          python generate_progress_image.py
+          git add progress.png
+          git commit -m "Update progress image"
+          git push
