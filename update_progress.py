@@ -13,11 +13,11 @@ def calculate_progress():
     return progress_bar
 
 def update_readme(progress_bar):
-    with open("README.md", "r") as file:
+    with open("Readme.md", "r") as file:
         lines = file.readlines()
 
     # Ersetze den Fortschrittsplatzhalter in der README.md
-    with open("README.md", "w") as file:
+    with open("Readme.md", "w") as file:
         for line in lines:
             if line.startswith("![Progress]"):
                 file.write(progress_bar + "\n")
