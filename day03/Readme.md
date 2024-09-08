@@ -2,6 +2,3 @@
 ## Concepts Practised
 - text
 ## Day3 Project: Tip Calculator
-
-
-
