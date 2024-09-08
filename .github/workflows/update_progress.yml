@@ -1,0 +1,37 @@
+name: Update README Progress
+
+on:
+  push:
+    branches:
+      - main  # Ändere dies zu deinem Standardbranch
+
+permissions:  # Füge diese Zeile hinzu
+  contents: write  # Schreibberechtigungen für Repository-Inhalte
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install Pillow
+
+      - name: Generate Progress Image
+        run: python generate_progress_image.py
+
+      - name: Commit and Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add progress.png
+          git commit -m "Update progress image"
+          git push
