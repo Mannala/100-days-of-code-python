@@ -1,0 +1,33 @@
+name: Update README Progress
+
+on:
+  push:
+    branches:
+      - main  # oder dein Standardbranch
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # falls du zusätzliche Abhängigkeiten hast
+
+      - name: Update README
+        run: |
+          python update_progress.py
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update progress in README"
+          git push
