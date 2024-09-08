@@ -6,7 +6,7 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 
 ## Progress:
 
-2 Tage von 100 abgeschlossen
+3 Tage von 100 abgeschlossen
 ![Progress](./progress.png)
 
 
