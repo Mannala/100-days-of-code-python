@@ -16,8 +16,10 @@ def create_progress_image(progress_percentage, output_path):
 
     # Fortschrittsprozentzahl zeichnen
     font = ImageFont.load_default()
+    # Berechne die Größe des Textes mit textbbox
     text = f"{progress_percentage:.1f}%"
-    text_width, text_height = draw.textsize(text, font=font)
+    text_bbox = draw.textbbox((0, 0), text, font=font)
+    text_width, text_height = text_bbox[2] - text_bbox[0], text_bbox[3] - text_bbox[1]
     draw.text(((width - text_width) // 2, (height - text_height) // 2), text, fill=text_color, font=font)
 
     # Bild speichern
