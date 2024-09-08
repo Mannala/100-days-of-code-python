@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Ändere dies zu deinem Standardbranch
 
-permissions:  # Füge diese Zeile hinzu
+permissions:
   contents: write  # Schreibberechtigungen für Repository-Inhalte
 
 jobs:
@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: pip install Pillow
 
-      - name: Generate Progress Image
-        run: python generate_progress_image.py
+      - name: Generate Progress Image and Update README
+        run: python update_progress.py  # Korrigierter Dateiname
 
       - name: Commit and Push changes
         env:
@@ -32,6 +32,6 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add progress.png
-          git commit -m "Update progress image"
+          git add README.md progress.png  # Füge README.md hinzu
+          git commit -m "Update progress image and README"
           git push
