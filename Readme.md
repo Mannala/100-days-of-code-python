@@ -14,4 +14,5 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 1:](https://github.com/mannala/100-days-of-code-python/tree/main/day01) Working with Variables in Python to Manage Data
 - [Day 2:](https://github.com/mannala/100-days-of-code-python/tree/main/day02) Understanding Data Types and How to Manipulate Strings
 - [Day 3:](https://github.com/mannala/100-days-of-code-python/tree/main/day03) Control FLow and Logical Operators
+- [Day 4:](https://github.com/mannala/100-days-of-code-python/tree/main/day04) Randomisation and Python Lists
 # continuied...
