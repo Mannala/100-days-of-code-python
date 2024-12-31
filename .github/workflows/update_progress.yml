@@ -32,6 +32,10 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add Readme.md progress.png  # Füge README.md hinzu
-          git commit -m "Update progress image and README"
-          git push
+          git add Readme.md progress.png || true
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update progress image and README"
+            git push
+          fi
