@@ -5,4 +5,4 @@
 - Debugging and some Basic Errors in Python
 - Input Function
 - Python Variables and good and bad Variable Names
-## Day1 Project: Band Name Generator
+## Project: Band Name Generator

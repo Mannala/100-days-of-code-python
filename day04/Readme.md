@@ -3,4 +3,4 @@
 - Randomisation
 - Python Lists
 - 2D Lists
-## Day4 Project: Rock Paper Scissors
+## Project: Rock Paper Scissors
