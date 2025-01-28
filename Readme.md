@@ -16,4 +16,5 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 3:](https://github.com/mannala/100-days-of-code-python/tree/main/day03) Control FLow and Logical Operators
 - [Day 4:](https://github.com/mannala/100-days-of-code-python/tree/main/day04) Randomisation and Python Lists
 - [Day 5:](https://github.com/mannala/100-days-of-code-python/tree/main/day05) Python Loops
+- [Day 6:](https://github.com/mannala/100-days-of-code-python/tree/main/day06) Python Functions
 # continuied...
