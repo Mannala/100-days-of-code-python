@@ -20,5 +20,7 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 7:](https://github.com/mannala/100-days-of-code-python/tree/main/day07) Hangman
 - [Day 8:](https://github.com/mannala/100-days-of-code-python/tree/main/day08) Function Parameters & Caesar Cipher
 - [Day 9:](https://github.com/mannala/100-days-of-code-python/tree/main/day09) Dictionaries, Nesting and Secret Auction
-- [Day 10:](https://github.com/mannala/100-days-of-code-python/tree/main/day09) Functions with Outputs
+- [Day 10:](https://github.com/mannala/100-days-of-code-python/tree/main/day10) Functions with Outputs
+- [Day 11:](https://github.com/mannala/100-days-of-code-python/tree/main/day11) Blackjack-Project
+- [Day 12:](https://github.com/mannala/100-days-of-code-python/tree/main/day12) Guess the Number
 # continuied...
