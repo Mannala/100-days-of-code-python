@@ -25,5 +25,7 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 12:](https://github.com/mannala/100-days-of-code-python/tree/main/day12) Guess the Number
 - [Day 13:](https://github.com/mannala/100-days-of-code-python/tree/main/day13) Debugging Code
 - [Day 14:](https://github.com/mannala/100-days-of-code-python/tree/main/day14) Higher Lower Game
+
+## <img src='https://github.com/user-attachments/assets/3e18e91f-2ff0-4e59-861d-b6e61a5a0b1f' width='30' heigth='30'> Intermediate
 - [Day 15:](https://github.com/mannala/100-days-of-code-python/tree/main/day15) Coffee Machine
 # continuied...
