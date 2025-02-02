@@ -23,4 +23,5 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 10:](https://github.com/mannala/100-days-of-code-python/tree/main/day10) Functions with Outputs
 - [Day 11:](https://github.com/mannala/100-days-of-code-python/tree/main/day11) Blackjack-Project
 - [Day 12:](https://github.com/mannala/100-days-of-code-python/tree/main/day12) Guess the Number
+- [Day 13:](https://github.com/mannala/100-days-of-code-python/tree/main/day13) Debugging Code
 # continuied...
