@@ -24,4 +24,5 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 11:](https://github.com/mannala/100-days-of-code-python/tree/main/day11) Blackjack-Project
 - [Day 12:](https://github.com/mannala/100-days-of-code-python/tree/main/day12) Guess the Number
 - [Day 13:](https://github.com/mannala/100-days-of-code-python/tree/main/day13) Debugging Code
+- [Day 14:](https://github.com/mannala/100-days-of-code-python/tree/main/day14) Higher Lower Game
 # continuied...
