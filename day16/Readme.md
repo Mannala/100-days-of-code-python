@@ -1,5 +1,5 @@
-# Day 16 - Object-oriented Programming
+# Day 16 - Object-Oriented Programming
 ## Concepts Practised
-- Concept of OOP
+- 
 ## Project: Coffee Machine in OOP
 
