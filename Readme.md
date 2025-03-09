@@ -30,4 +30,5 @@ This Project follow the Udemy course: [100 Days of Code: The Complete Python Pro
 - [Day 15:](https://github.com/mannala/100-days-of-code-python/tree/main/day15) Coffee Machine
 - [Day 16](https://github.com/mannala/100-days-of-code-python/tree/main/day16) Object-oriented Programming
 - [Day 17](https://github.com/mannala/100-days-of-code-python/tree/main/day17) The Quiz Project & the Benefits of OOP
+- [Day 18](https://github.com/mannala/100-days-of-code-python/tree/main/day18) Turtle & THe Graphical User Interface
 # continuied...
