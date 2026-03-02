@@ -19,17 +19,27 @@ def caesar(original_text, shift_amount, encode_or_decode):
             output_text += letter
     print(f"Here is the {encode_or_decode}d result: {output_text}")
 
-reboot = True
-while reboot:
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-    text = input("Type your message:\n").lower()
-    shift = int(input("Type the shift number:\n"))
+def programm():
+    reboot = True
+    while reboot:
+        while True:
+            direction = input("Type 'encode' to encrypt, type 'decode' to decrypt (otherwise 'exit'):\n").lower()
+            if direction == 'exit':
+                return
+            if direction == 'encode' or direction == 'decode':
+                break
+            else:
+                print("\nWrong Answer!!\n")
+        text = input("Type your message:\n").lower()
+        shift = int(input("Type the shift number:\n"))
 
-    caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
-    restart = input("Type 'yes' if you want to go again. Otherwise, type 'no':\n")
-    if restart == "yes":
-        reboot = True
-    elif restart == "no":
-        reboot = False
-    else:
-        print("You typed an invalid command. Programm restarts!")
+        caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
+        restart = input("Type 'yes' if you want to go again. Otherwise, type 'no':\n")
+        if restart == "yes":
+            reboot = True
+        elif restart == "no":
+            reboot = False
+        else:
+            print("You typed an invalid command. Programm restarts!")
+
+programm()
