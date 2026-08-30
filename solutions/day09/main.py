@@ -36,11 +36,17 @@ while game_mode:
     bid = get_bid()
     bidders_dictionary[name] = bid
     while True:
-        choice = input("Are there any other bidders? Type 'yes' or 'no'.").strip().lower()
+        choice = input("Are there any other bidders? Type 'yes' or 'no'. ").strip().lower()
         if choice in ['yes', 'no']:
             break
         else:
-            print("Wrong answer. Please type in 'yes' or 'no'")
+            print("Wrong answer. Please type in 'yes' or 'no'\n")
     if choice == 'yes':
-        
-    
+        clear_screen()
+    else:
+        bidder_name, bidder_value = name, bid
+        for key, value in bidders_dictionary.items():
+            if value > bidder_value:
+                bidder_value = value
+        print(f"The winner is {bidder_name} with a bid of €{bidder_value}")
+        game_mode = False
