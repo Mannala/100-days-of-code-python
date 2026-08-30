@@ -48,5 +48,6 @@ while game_mode:
         for key, value in bidders_dictionary.items():
             if value > bidder_value:
                 bidder_value = value
+                bidder_name = key
         print(f"The winner is {bidder_name} with a bid of €{bidder_value}")
         game_mode = False
