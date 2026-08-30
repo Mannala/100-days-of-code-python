@@ -13,7 +13,7 @@ def get_name():
         return get_name()
     if name in bidders_dictionary:
         print("The name already exists. Please enter a different Name.")
-        return get_name
+        return get_name()
     return name
 
 def get_bid():
@@ -44,10 +44,7 @@ while game_mode:
     if choice == 'yes':
         clear_screen()
     else:
-        bidder_name, bidder_value = name, bid
-        for key, value in bidders_dictionary.items():
-            if value > bidder_value:
-                bidder_value = value
-                bidder_name = key
+        bidder_name = max(bidders_dictionary, key=bidders_dictionary.get)
+        bidder_value = bidders_dictionary[bidder_name]
         print(f"The winner is {bidder_name} with a bid of €{bidder_value}")
         game_mode = False
